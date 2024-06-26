@@ -1,0 +1,174 @@
+<!-- <html>
+    <body>
+        <script>
+            var emp=["Muskan","Himanshi","Navya","Pallavi","Mansi"];
+            for (i=0;i<emp.length;i++){
+                document.write(emp[i]+"<br>");
+            }   
+    let a=emp.length
+    document.write(a)
+     </script>
+    </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<body>
+   <script>
+    var emp=[1,2,3,4,5,33];
+    document.write(typeof(emp),"<br>")
+    for (i=0;i<emp.length;i++) {
+        document.write(emp[i],"<br>");
+    }
+    let a=emp.toString();
+   document.write(a);
+   document.write(typeof(a))
+   </script> 
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    To join or concatenate two arrays
+</head>
+<body>
+    <script>
+     const fruits=["banana","apple","orange","mango"," "] 
+            //it takes last charcter as null so it does not do operation on the last one 
+        let a=["strawberry   "]
+        document.write("<br>",fruits.join(a))
+        const x=[1,2,3];
+        let y=[66," "]
+        document.write("<br>",x.join(y))
+    </script>
+    </body> 
+</html>-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <u>Push and Pop</u>
+</head>
+<body>
+    <script>
+        const fruits=["banana","apple","orange","mango"] 
+        document.write("<br>",fruits)
+        fruits.pop();
+        document.write("<br>",fruits);
+        fruits.push("kiwi");
+        document.write("<br>",fruits);
+    </script>
+    
+</body>
+</html> -->
+<!-- <html>
+    <head><u>Sorting an array</u> <br>means arranging in ascending or descending order</head>
+    <script>
+let arr=[10,12,56,42,5,4,1,98,37]
+        
+    </script>
+</html> -->
+<!-- <html>
+    <head>Search an element whether the element exist if yes then print the position or 
+        index of element otherwise element does not exist</head>
+        <body>
+            <script>
+                const arr=[12,14,6,77,3,6,23,51,13,42]
+                n=parseInt(prompt("Enter a number: "))
+             for (i=0;i<arr.length;i++){ if (n==arr[i]){
+                document.write(n+"is found at position"+i)
+            t=1
+        break }
+        else{ t=0}
+        if (t==0){ document.write("element does not exist")}
+
+               }        
+            </script>
+        </body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let person ={ firstname:"Priya",
+      lastname:"Sharma",
+      age:28,
+      contactno:9898989898
+    };
+    document.writeln(person.firstname+" "+person.lastname)
+  </script>   
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var emp=new Object();
+    emp.id=prompt("enter id");
+    emp.name="Ravi Kapoor";
+    emp.salary=parseInt(prompt("enter the salary"));
+    document.write(emp.id+" "+emp.name+" "+emp.salary);
+  </script>
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const person={
+      firstname:"Mansi",
+      lastname:"Sharma",
+      age:16
+    }
+    const x=person;
+    x.age=19;
+    document.write(person.firstname+" "+ "is"+" "+person.age+" "+"years old")
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function info() {
+      let student={
+      firstname:prompt("Enter first name"),
+      lastname:prompt("Enter last name"),
+      age:prompt("Enter age"),
+      rollnumber:prompt("Enter roll number"),
+      percentage:prompt("Enter percentage"),
+    };
+    document.writeln(student.firstname+"<br>"+student.lastname+"<br>"+student.age+"<br>"+student.rollnumber+"<br>"+student.percentage+"<br>")
+    }
+    document.write("<br>")
+    for(i=1;i<=5;i++){
+    data=prompt("enter the data of"+i+"student");
+    info()
+    record= prompt("Do you want to enter the record of another student?");
+    if (record=="yes")
+    document.write("enter the data")
+    break;
+  }
+    </script> 
+</body> -->

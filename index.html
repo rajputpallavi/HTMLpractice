@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body> <p>hello world</p>-->
+ <!-- hello how are you?today we are starting writing code in html     -->
+ <p>hello my name is pallavi thakur i am a student of be-cse 1st semester in chitkara university.i m looking forward to have more and more opprtunities to build up my career by studying in this university.</p>
+<!--above i use "toggle word wrap" from the "setting" options by firstly selecting the text that i want
+     to have in a single line without having any horizontal scroll bar  -->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+<!--remember use the above heading only for the important content like the heading which can tell you what the whole webpage is about .Donot use it for the size purpose! -->
+<!--"ANCHOR" tag is used along with "href" to add links to the page <a href "link">___</a>-->
+<a href="https://www.google.com/">Google</a>
+<BR><!--BR or br tag is used to break the lin eto go to next line-->
+<a href="https://code.visualstudio.com/download">Download VS Code</a><br>
+<!--the link that we use of another website is called "absolute link" the two links which are mentioned above -->
+<a href="/practiceeee.html">Go to practice html</a><br>
+<!--the link which we made by ourself is called "relative link" mentioned above -->
+<img src="https://m.media-amazon.com/images/I/41e3YGKg-3L.jpg" alt="notebook" height="500"/><hr>
+<img src="https://i.ebayimg.com/images/g/E7YAAOSwCwJfdh5y/s-l300.jpg" alt="random image" width="100"/><hr>
+<img src="https://instahimachal.com/wp-content/uploads/2023/07/Treks-and-Trails-in-Jibhi-Kullu-Himachal-Pradesh.jpeg"/>
+<!--anchor tag has one more attribute known as "target=_main"...in which the link will open on the next tab 
+and not on the same tab-->
+<a href="https://google.com" target="_main">GOOGLE</a><HR>
+    <!--make your image clickable by putting the image tag inside the anchor tag-->
+    <a href="https://google.com" target="_main"><img src="https://www.polymtl.ca/calendrier/sites/calendrier.amigow2020.polymtl.ca/files/googlelogo.jpg" 
+        alt="google" width="100"></a>
+<hr><big> this tag shows big text </big><hr>
+<small>this tag shows small text </small><hr>
+<!--the above <hr> tag is used to insert a line to divide the webpage-->
+<!--bold,italic and underline tags-->
+<b>bold</b><br>
+<i>italic</i><br>
+<u>underline</u><hr>
+<!--in case u want to write a formula where u have to write in subscript or superscript ,  used the following tags-->
+<p>subscript tag: H<sub>2</sub>O</p>
+<p>superscript tag: 3<sup>2</sup>= 9</p>
+<hr>
+<!--next is <pre> tag ...which is used to display tags as it is(not ignoring the spaces and next line) -->
+<p>
+    Lorem             ipsum dolor sit amet consectetur adipisicing elit. Ut alias, deserunt a animi excepturi non, eius esse recusandae nesciunt, similique facere quos! Expedita aperiam modi quaerat! Ab, iure. Animi, corporis.
+</p>
+<!--in the above case we see that there is so much space after after the word lorem ..but
+when i run the CODE ,we see that in webpage ...there is no such space ..they just totally ignore the space
+and put the words in a single line ,but what if we really want to show the space there?it it possible?..
+the answer is yes,for that we use <pre> tag whuch will not ignore the space and next line..let's use it-->
+    <pre>
+  Lorem        ipsum dolor sit amet n   consectetur adipisicing elit. 
+  Praesentium expedita possimus
+   architecto harum numquam laboriosam, saepe quos eligendi mollitia laborum nobis 
+   facere maiores delectus minus,
+    officia maxime sint,
+    accusantium sapiente.  
+    <!--you see it shows the text as it is ...as somewhere i have put spaces.somewhere i have started from next line -->   
+    </pre>
+    <hr>
+    <pre>
+    <h2>page layout techniques:</h2>
+    <big>SEMANTIC TAGS</big>
+    examples:header,main,footer==which have a meaning two their names itself.
+    <big>NON-SEMANTIC TAGS</big>
+    examples:div tag,span==by their names we cannot be able to table what they really mean.</pre>
+    <HR>
+        <pre>HEADER TAGS:
+            <header><p>education    projects</p></header>
+ MAIN TAG:
+ <!--inside main tag ..where we actually write the content , we have other tags,section tag
+,article tag,aside tag-->
+SECTION TAG:for a section on your page
+<main>
+    <section>education:be-cse chitkara university</section>
+    <section>experience:microsoft intern</section>
+</main><!--when u will run the above code on webpage it will be looking normal nothing new in that...but what 
+chnages is the priority and the selection thing in the code when u inspect it ...it will inspect
+the different sections separatly...so it is very important to divide your code in sections so that in 
+could be more readable and presentable -->
+ARTICLE TAG:for article on your page
+<main>
+    <article>my story:
+    </article>
+</main><!--this tag is used to right a article by dividing it differently in the code-->
+ASIDE TAG:for content aside main content(ads).to tell that this is not the part of the main content.
+<main><aside>this is an ad</aside></main>
+ FOOTER:
+<footer><h5>hello go to the next page</h5></footer>
+        </pre>
+<big>DIV TAG:</big>
+it is a container for other tags.
+<div style="background-color:lightyellow"><p> div tag is a block element (it takes full  width.)</p></div>
+<div style="font-family:arial;background-color:lightblue">hii ...i m good and what about you??</div>
+<!--div tag can be used to make changes in a whole block in that part like color,style etc--><hr>
+<big>SPAN TAG:</big>
+it is also a container for other tags..but it does not take full width...it takes the space as needed
+<span style="background-color:lightpink">span is an inline element</span><hr>
+<big>UNORDERED LIST:</big>
+<UL >
+    <LI>APPLE</LI>
+    <LI>ORANGE</LI>
+    <LI>MANGO</LI>
+</UL><hr>
+<big>ORDERED LIST:</big>
+<OL><LI>APPLE</LI>
+    <LI>ORANGE</LI>
+    <LI>MANGO</LI></OL>
+<!--OL means ordered list,ul means unordered list,li means list items-->
+<hr>
+<big>TABLE</big>
+<table border="1px"><caption>Student data</caption><!--this caption tag is used to add the heading to the table-->
+    <tr><th>NAME</th><TH>ROLL NO.</TH></tr>
+        <tr><td>Pallavi</td><td>0844</td></tr>
+        <tr><td>Mansi</td><td>0817</td></tr>
+</table>
+<hr>
+<big>FORM TAG</big>:it is used to collect data from the user.
+<br>examples:signup/login/help requests/contact me.<br>
+ACTION IN FORM:it is used to define what action needs to be performed when a form is submitted.<br>
+<!-- <form action="/action.php"></form> -->
+<big>input type</big>
+<form action="/action.php">
+<input type="text" placeholder="type your name"><br>
+<input type="password" placeholder="password"><br>
+<big>label </big>
+<label for="101"><input type="radio" value="class 11" name="class" id="101">class 11</label>
+<br>
+<label><input type="radio" value="class 12" name="class" id="101">class 12</label><br>
+</form>
+<hr><big>class and id</big>
+<div id="id1" class="group1"></div>
+<div id="id2" class="group2"></div>
+<hr>
+<big>checkboxes</big><br>
+<label for="101">
+    <input type="checkbox" value="math" name="subject" id="101">math
+</label><br>
+<label for="102">
+    <input type="checkbox" value="physics" name="subject" id="102">physics
+</label><br>
+<label for="103">
+    <input type="checkbox" value="chem" name="subject" id="103">chem
+</label><br>
+<label for="104">
+    <input type="checkbox" value="art" name="subject" id="104">art
+</label><br>
+<label for="105">
+    <input type="checkbox" value="eng" name="subject" id="105">eng
+</label>
+<hr>
+<big>SELECT TAG...FOR DROPDOWN OPTIONS</big>
+<select name="city" >
+    <option value="delhi">delhi</option>
+    <option value="mumbai">mumbai</option>
+</select>
+<hr>
+<big>TEXTAREA</big>
+<BR>
+<form>
+    <textarea name="feedback" id="100" placeholder="please enter your feedback here"
+    rows="5">feedback</textarea>
+    <br>
+    <hr>
+    <big>submit form</big>
+    <input type="submit" value="submit"></form><hr>
+    <big>iframe tag</big>:a website inside a website<br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HcOc7P5BMi4?si=gJ6KGC_Pz1WxJAvw"
+     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+     clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
+     <iframe src="https://www.wikipedia.org/" width="560" height="315"></iframe>
+     <hr>
+     <big>VIDEO TAG:</big>
+     <VIDEO src="C:\Users\AVITA\OneDrive\Desktop\HTML\hindu_-_31311 (540p).mp4"width="560" height="315"
+     controls loop></VIDEO>
+</body>
+</html>

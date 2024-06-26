@@ -1,0 +1,458 @@
+<!-- <html>
+    <head>
+        <title>Page title</title>
+        <script>
+            document.write("welcome to my website");
+        </script>
+    </head>
+    <body>
+        <p>Javascript in the head section.</p>
+    </body>
+</html>
+
+
+
+<html>
+    <head>
+        <title>javaScript internal script</title>
+        <script type="text/javascript">
+            function hello() {
+                alert("Hello World");
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="hello();" name="ok" value ="click on the button">
+    </body>
+
+</html>
+<html>
+    <head>
+        <title>PAGE TITLE</title>
+    </head>
+    <BODY>
+        <p>
+            <a href="#" onclick="alert('welcome');">click</a>
+        </p>
+        <p>Using inline javascript tag </p>
+    </BODY>
+</html>
+
+
+
+<html>
+    <head>
+        <title>Including an external javascript file</title>
+
+    </head>
+    <body>
+        <form><input type="button" value="display result" onclick="disp()"/> </form>
+        <script src="show.js"></script>
+    </body>
+</html>
+ -->
+<!-- <html>
+    <body>
+        <h2>JavaScript</h2>
+        <script>
+            let x="pallavi";
+            let y=560;
+            let z="thakur";
+            a="@gmail.com"
+            document.write(z+x+y+a);
+        </script>
+    </body>
+</html> -->
+<!-- <html>
+    <body>
+        <script>
+            var x=10;
+            var y=50;
+            var z=x+y;
+            const price1 =5;
+            const price2 =16;
+            let total = price1 + price2;
+            document.writeln(z);
+            document.writeln(total);
+        </script>
+    </body>
+</html> -->
+<!-- <html>
+    <body>
+        <script>
+            var x=100;//global vaariable
+            function a(){
+                document.writeln(x);
+            }
+            function b(){
+                y=90
+                x=80
+                document.writeln(y);
+                document.writeln(x);
+            }
+            a();//calling JavaScript function
+            b()
+            document.writeln(y)
+
+        </script>
+    </body>
+</html> -->
+
+
+
+<!-- <html>
+
+<body>
+    <script>
+        const number = parseInt(prompt('Enter the number of terms: '));
+        let n1 = 0, n2 = 1, nextTerm;
+
+        console.log('Fibonacci Series:');
+        document.writeln(n1)
+        document.writeln(n2)
+
+        for (let i = 1; i <= number; i++) {
+            console.log(n1);
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+            document.writeln(n1 + nextTerm)
+
+        }
+
+    </script>
+</body>
+
+</html> -->
+
+<!-- <html>
+    <body>
+        <h1>JavaScript Arithematic
+        </h1>
+        <h2>
+            The += operator
+        </h2>
+        <script>
+            var x =100;
+            x -= 5;
+            var y =90;
+            y+=10;
+            var z=20;
+            z*=2;
+            document.writeln(x);
+            document.writeln("<br>",y);
+            document.writeln("<br>",z);
+            //increment
+            let a=10;
+            a++;
+            ++a;
+            document.writeln("<br>","a= ",a)
+            //decrement
+            let b=10;
+            b--;  --b; --b;
+
+          
+            document.writeln("<br>","b= ",b)
+            
+        </script>
+    </body>
+<</html> -->
+<!-- html>
+    <body><h1>
+        Find the Greatest Number
+    </h1>
+        <script>
+            let a=23,b=57,c=30;
+            if (a>b && a>c)
+            {document.write("a is greater")}
+            else if (b>a && b>c)
+            { document.write("b is greater")}
+            else
+            { document.write("c is greater")}
+
+        </script>
+    </body>
+</html> -->
+<!-- <html>
+    <body>
+        <script>
+            let n= prompt("Enter your choice (A/B/C/D): ");
+            let a=20;
+            let b=15;
+            if (n=="A" || n=="a")
+            {document.writeln(a+b)}
+            else if (n=="B" || n=="b")
+            {document.writeln(a-b)}
+            else if (n=="C" || n=="c")
+            {document.writeln(a*b)}
+            else if (n=="D" || n=="d")
+            {document.writeln(a==b)}
+            else{document.writeln("Incorrect option selected ")}
+        </script></body></html> -->
+        <!-- <html>
+            <body>
+                <script>
+                    document.write(" for loop <br/>")
+                    for (i=1; i<=5; i++)
+                    {
+                        document.write(i +"<br/>")
+                    }
+                    document.write("while loop <br/>")
+                    var i=11;
+                    while (i<=15)
+                    {
+                        document.write(i +"<br/>");
+                        i++;
+                    }
+                    document.write("Do while loop<br/>")
+                    var i=21;
+                    do{document.write(i +"<br/>");
+                        i++;
+                    } while (i<=25);
+                    document.write("<br/> Array");
+                    const cars=["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+                    let text="";
+                    for (let i=0; i< cars.length; i++){
+                        text +=cars[i]+"<br>";
+                    }
+                    document.write("<br>",text);
+
+
+let newArray = [];
+const numbers=[11,12,13,14,15,16,17,18,19,20]
+for (let i =0; i < numbers.length-1 ; i ++) {
+  newArray.push(numbers[i] + numbers[i + 1]);
+}
+
+document.write(newArray);
+var i=0,sum=0;
+x=prompt("enter the number: ")
+for (i=0;i<=x; i++)
+{
+    sum+=i
+}
+document.write("<br>the sum is:"+sum) -->
+<!-- <html><body><script>
+var a=parseInt(prompt("please enter the starting number: "))
+var b=parseInt(prompt("please enter the last number: "))
+var n=0
+while( a<=b)
+{n=n+a; a++}
+document.write(n)
+                </script>
+            </body>
+        </html> -->
+        <!-- <html>
+            <body>
+
+                <script>
+                    var x=parseInt(prompt("enter"))
+                    document.write(x);
+                    document.write(typeof(x));
+                    document.write("<br>"+typeof "john" +"<br>" + typeof 3.14 +"<br>" +
+                    typeof true +"<br>" + typeof false + "<br>" + typeof x);
+                </script>
+
+            </body>
+        </html> -->
+        <!-- <html>
+            <body>
+                <script>
+                    function msg(){
+                        document.write("hello world!!");
+                    }</script>
+                    <input type="button" onclick="msg()" value="call function">
+                
+            </body>
+        </html> -->
+        <!-- <html>
+            <body>
+                <script>
+                    function getInfo(x,y){
+                        return x*y;
+                    }
+                </script>
+                <script>
+                    document.write(getInfo(5,6));
+                </script>
+            </body>
+        </html> -->
+        <!-- <html>
+            <body>
+                <script>
+                    function add(a,b){
+                        return a+b;
+                    }
+                    let number1=parseFloat(prompt("Enter first number"))
+                    let number2=parseFloat(prompt("Enter second number"))
+                    let result=add(number1,number2)
+                    document.write("The sum is" +result)
+                </script>
+                
+            </body>
+        </html> -->
+<!-- <html>
+    <body>
+        <script>
+            function fact(num)
+{
+    if(n<0)
+     return "Undefined";
+    var fact=1;
+    for(var i=n;i>1;i--)
+      fact*=i;
+    return fact;
+ }
+ let n=parseFloat(prompt("enter the number"))
+ let result=fact(n)
+ document.write("The factorial is"+ result)
+</script></body></html> -->
+<!-- <html>
+<body>
+<script>
+function fib(a,b,m){
+    if (m==0){return; 
+        }
+    c=a+b;
+    document.writeln(c+"<br/>")
+    fib(b,c,m-1);}
+let a =0;
+let b =1;
+let m=10;
+document.writeln(a+"<br>")
+result=fib(a,b,m-2)
+document.write(result)
+</script>
+</body>
+</html> -->
+<!-- <html>
+<body>
+    <script>
+            
+            function convertbinary(x){
+                let bin=0;
+                let rem, i=1;
+                while (x!=0){
+                    rem=x%2;
+                    x=parseInt(x/2);
+                    bin=bin+rem*i;
+                    i=i*10
+                }
+                document.writeln("Binary number :",bin)
+            }
+            let num=parseInt(prompt("enter the number to convert to binary"))
+            convertbinary(num)
+
+        console.log('hello')
+        </script>
+    </body>
+</html>
+ -->
+ <!-- <html>
+    <body>
+        <script>
+            var n=prompt(" ")
+            document.write(typeof (n))
+        </script>
+    </body>
+ </html> -->
+ 
+ <!-- <html>
+    <body>
+        <script>
+            var n = parseInt(prompt("enter a number")), reverse = 0, remainder;
+
+            while (n>0) {
+                remainder = n%10;
+                reverse = reverse * 10 + remainder;
+                n =parseInt(n / 10);
+            }
+        document.write(reverse);                                             
+        </script>
+    </body>
+</html> -->
+
+<!-- <html>
+    <body>
+        <script>
+            let num=parseInt(prompt("enter a number:  "))
+            let rev=num.split('').reverse().join('')
+            document.write(rev)
+        </script>
+    </body>
+</html> -->
+<!-- <html>
+    <body>
+        <script>
+            let n=prompt("enter the number")
+            document.write(n.length)
+        </script>
+    </body>
+</html> -->
+
+<!-- <html>
+    <body>
+        <h2>JavaScript Timing</h2>
+
+        <p>click "Try it"
+        </p>
+        <button onclick="setTimeout(myFunction,3000);">Try it</button>
+        <button onclick="setTimeout(delayFunction,1000);">Click the given button</button>
+        <script>
+            function myFunction(){
+                alert('hello');
+            }
+            function delayFunction(){
+                //delay the message on web after 3 seconds on calling the delayFunction
+                document.write('<h3>welcome to my page</h3>');
+            }
+        </script>
+    </body>
+</html> -->
+<!-- <html>
+    <body>
+        <script>
+            function showtime(){
+                var systemdate= new Date()
+            document.getElementById("clock").innerHTML = systemdate.toLocaleTimeString()
+        }
+            setInterval(showtime,1000)
+        </script>
+        <h3>Updated time will show in 1 seconds</h3>
+        <h3>The current time on your computer is:<br>
+        <span id="clock"></span></h3>
+    </body>
+</html> -->
+<!-- <html>
+    <body>
+        <script>
+            function showtime(){
+                var systemdate= new Date()
+                
+            document.getElementById("date").innerHTML = systemdate.toLocaleDateString()
+    }
+            setInterval(showtime,3000)
+        </script>
+        <h3>Date will show in 3 seconds</h3>
+        <h3>The current date on your computer is:<br>
+        <span id="date"></span></h3>
+       </body>
+</html> -->
+<html>
+    <body>
+        <script>
+            function showdate(){
+                var systemdate= new Date();
+                var day = systemdate.getDate();
+                var month =systemdate.getMonth() + 1;
+                var year = systemdate.getFullYear();
+                document.write("Day:"+ day +"<br>")
+                document.write("Month:"+ month +"<br>")
+                document.write("Year:"+ year +"<br>")
+                }
+     setInterval(showdate,1000
+     )
+        </script>
+        
+       </body>
+</html>

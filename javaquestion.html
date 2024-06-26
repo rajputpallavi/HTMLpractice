@@ -1,0 +1,87 @@
+<html>
+  <body>
+    <script>
+      
+      function factorial(num)
+      {
+          if(num<0)
+           return "Undefined";
+          var fact=1;
+          for(var i=num;i>1;i--)
+            fact*=i;
+          return fact;
+       }
+      
+      function fibonacci(num) {
+        if (num === 1) {
+          return [0];
+        } else if (num === 2) {
+          return [0, 1];
+        } else {
+          var fibArr = [0, 1];
+          for (var i = 2; i < num; i++) {
+            fibArr.push(fibArr[i - 1] + fibArr[i - 2]);
+          }
+          return fibArr;
+        }
+      }
+      
+      function pattern(rows) {
+        for (var i = 1; i <= rows; i++) 
+        {
+          var row = "";
+          for (var j = 1; j <= i ; j++) {
+            row += j + " ";}
+          document.write(row+"<br>");
+        }
+      }
+      
+      function checkPrime(num) {
+        if (num <= 1) {
+          return false;
+        }
+        for (var i = 2; i <= math.sqrt(num); i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+      
+      function isArmstrong(num) {
+        var sum = 0;
+        var temp = num;
+        var length = temp.toString().length;
+        while (temp > 0) {
+          var remainder = temp % 10;
+          sum += Math.pow(remainder, length);
+          temp = parseInt(temp / 10);
+        }
+        return sum === num;
+      }
+      
+      var userInput = prompt("Enter 1 for factorial, 2 for Fibonacci, 3 for pattern, 4 for prime number check, or 5 for Armstrong number check: ");
+      
+      if (userInput === "1") {
+        var number = parseInt(prompt("Enter a number to find its factorial: "));
+       document.write("Factorial of " + number + " is " + factorial(number));
+      } else if (userInput === "2") {
+        var number = parseInt(prompt("Enter the number of Fibonacci elements to be generated: "));
+        document.write("Fibonacci sequence: " + fibonacci(number));
+      } else if (userInput === "3") {
+        var rows = parseInt(prompt("Enter the number of rows for the pattern: "));
+        pattern(rows);
+      } else if (userInput === "4") {
+        var number = parseInt(prompt("Enter a number to check if it's prime: "));
+        document.write(checkPrime(number) ? number + " is a prime number." : number + " is not a prime number.");
+      } else if (userInput === "5") {
+        var number = parseInt(prompt("Enter a number to check if it's an Armstrong number: "));
+        document.write(isArmstrong(number) ? number + " is an Armstrong number." : number + " is not an Armstrong number.");
+      } else {
+        document.write("Invalid input. Please try again.");
+      }
+      
+    </script>
+  </body>
+</html>
+                
